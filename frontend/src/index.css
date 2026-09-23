@@ -1,0 +1,247 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #040711;
+    background-attachment: fixed;
+    color: #F8FAFC;
+    font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+  }
+}
+
+/* Suppress any rogue Chrome extension injected floaters (e.g. Emily .extension-embed-container) */
+.extension-embed-container,
+[data-type="floater-button"],
+#extension-root {
+  display: none !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+  opacity: 0 !important;
+  width: 0 !important;
+  height: 0 !important;
+  z-index: -99999 !important;
+}
+
+/* Trap & neutralize buggy third-party Chrome extensions hardcoded to hijack #root on localhost:3000 */
+#root {
+  display: none !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+  position: fixed !important;
+  left: -99999px !important;
+  top: -99999px !important;
+  width: 0 !important;
+  height: 0 !important;
+  overflow: hidden !important;
+  opacity: 0 !important;
+  z-index: -999999 !important;
+}
+
+#supplychain-app {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   DARK MODE ULTRA-TRANSPARENT TINTED GLASS ARCHITECTURE
+══════════════════════════════════════════════════════════════════ */
+/* Large Outer Container Panel - Ultra Transparent Optical Glass */
+.glass-panel {
+  background: rgba(15, 23, 42, 0.16) !important;
+  backdrop-filter: blur(5px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(5px) saturate(180%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.20) !important;
+  box-shadow: 
+    0 24px 50px -12px rgba(0, 0, 0, 0.6),
+    0 4px 16px 0 rgba(0, 0, 0, 0.2),
+    inset 1px 1px 1px 0 rgba(255, 255, 255, 0.28),
+    inset -1px -1px 1px 1px rgba(0, 0, 0, 0.3) !important;
+  border-radius: 22px;
+  position: relative;
+  color: #F8FAFC;
+}
+
+/* Luxury Metric & Content Card - Luminous Crystal Transparency */
+.glass-luxury-card {
+  background: rgba(15, 23, 42, 0.26) !important;
+  backdrop-filter: blur(6px) saturate(190%) !important;
+  -webkit-backdrop-filter: blur(6px) saturate(190%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.18) !important;
+  box-shadow: 
+    0 16px 36px -8px rgba(0, 0, 0, 0.5),
+    0 2px 8px 0 rgba(0, 0, 0, 0.2),
+    inset 1.5px 1.5px 1px 0 rgba(255, 255, 255, 0.28),
+    inset -1px -1px 1px 1px rgba(0, 0, 0, 0.25) !important;
+  border-radius: 1.35rem;
+  color: #F8FAFC;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 2.2);
+}
+
+.glass-luxury-card:hover {
+  background: rgba(15, 23, 42, 0.36) !important;
+  border-color: rgba(234, 88, 12, 0.55) !important;
+  box-shadow: 
+    0 24px 48px -10px rgba(0, 0, 0, 0.7),
+    0 0 25px rgba(234, 88, 12, 0.30),
+    inset 1.5px 1.5px 1.5px 0 rgba(255, 255, 255, 0.42) !important;
+  transform: translateY(-3px) scale(1.015);
+}
+
+/* Liquid Glass Buttons */
+.btn-glass-primary {
+  background: linear-gradient(135deg, rgba(234, 88, 12, 0.92) 0%, rgba(217, 119, 6, 0.92) 100%) !important;
+  color: #FFFFFF !important;
+  font-weight: 700;
+  border-radius: 0.875rem;
+  border: 1px solid rgba(255, 255, 255, 0.55) !important;
+  box-shadow: 
+    0 6px 14px rgba(0, 0, 0, 0.3), 
+    0 0 20px rgba(234, 88, 12, 0.4),
+    inset 1.5px 1.5px 1px 0 rgba(255, 255, 255, 0.7),
+    inset -1px -1px 1px 1px rgba(0, 0, 0, 0.2) !important;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.8);
+  backdrop-filter: blur(10px);
+}
+
+.btn-glass-primary:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 
+    0 10px 24px -2px rgba(234, 88, 12, 0.65),
+    0 0 28px rgba(234, 88, 12, 0.55),
+    inset 2px 2px 2px 0 rgba(255, 255, 255, 0.95) !important;
+}
+
+/* Floating Navigation Island Dock & Header Capsule - Transparent Optical Glass */
+.nav-island-container,
+.header-capsule-container {
+  background: rgba(15, 23, 42, 0.38) !important;
+  backdrop-filter: blur(12px) saturate(200%) !important;
+  -webkit-backdrop-filter: blur(12px) saturate(200%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.22) !important;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5), inset 1.5px 1.5px 1px rgba(255, 255, 255, 0.22) !important;
+  border-radius: 2rem;
+  transition: all 0.3s ease;
+}
+
+.header-capsule-container {
+  border-radius: 9999px !important;
+}
+
+.header-capsule-container:hover {
+  border-color: rgba(234, 88, 12, 0.45) !important;
+}
+
+.nav-island-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 1rem;
+  color: #94A3B8;
+  transition: all 0.25s ease;
+}
+
+.nav-island-item:hover, .nav-island-item.active {
+  color: #FFFFFF;
+  background: rgba(234, 88, 12, 0.30);
+  border: 1px solid rgba(234, 88, 12, 0.60);
+  box-shadow: 0 0 16px rgba(234, 88, 12, 0.40);
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   LIGHT MODE ULTRA-TRANSPARENT CRYSTAL ARCHITECTURE
+══════════════════════════════════════════════════════════════════ */
+[data-theme="light"] body {
+  background-color: #F1F5F9 !important;
+  background-image:
+    radial-gradient(at 5% 5%,    rgba(234, 88,  12, 0.20) 0px, transparent 50%),
+    radial-gradient(at 95% 5%,   rgba(124, 58, 237, 0.16) 0px, transparent 50%),
+    radial-gradient(at 50% 50%,  rgba(217, 119,  6, 0.14) 0px, transparent 50%),
+    radial-gradient(at 95% 95%,  rgba(234, 88,  12, 0.18) 0px, transparent 50%),
+    radial-gradient(at 5% 95%,   rgba(14, 165, 233, 0.16) 0px, transparent 50%) !important;
+  background-attachment: fixed !important;
+  color: #0F172A !important;
+}
+
+[data-theme="light"] h1, [data-theme="light"] h2, [data-theme="light"] h3,
+[data-theme="light"] h4, [data-theme="light"] h5, [data-theme="light"] h6 {
+  color: #0F172A !important;
+}
+
+[data-theme="light"] .glass-panel {
+  background: rgba(255, 255, 255, 0.22) !important;
+  backdrop-filter: blur(5px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(5px) saturate(180%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.90) !important;
+  box-shadow:
+    0 20px 45px -10px rgba(15, 23, 42, 0.08),
+    0 4px 16px 0 rgba(15, 23, 42, 0.03),
+    inset 1.5px 1.5px 1px 0 rgba(255, 255, 255, 1.0) !important;
+  color: #0F172A !important;
+}
+
+[data-theme="light"] .glass-luxury-card {
+  background: rgba(255, 255, 255, 0.28) !important;
+  backdrop-filter: blur(6px) saturate(190%) !important;
+  -webkit-backdrop-filter: blur(6px) saturate(190%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.92) !important;
+  box-shadow:
+    0 16px 36px -8px rgba(15, 23, 42, 0.06),
+    0 4px 12px 0 rgba(15, 23, 42, 0.02),
+    inset 1.5px 1.5px 1px 0 rgba(255, 255, 255, 1.0) !important;
+  color: #0F172A !important;
+}
+
+[data-theme="light"] .glass-luxury-card:hover {
+  background: rgba(255, 255, 255, 0.42) !important;
+  border-color: rgba(234, 88, 12, 0.65) !important;
+  box-shadow:
+    0 24px 48px -10px rgba(234, 88, 12, 0.22),
+    inset 1.5px 1.5px 1.5px 0 rgba(255, 255, 255, 1.0) !important;
+}
+
+[data-theme="light"] .nav-island-container,
+[data-theme="light"] .header-capsule-container {
+  background: rgba(255, 255, 255, 0.40) !important;
+  backdrop-filter: blur(12px) saturate(200%) !important;
+  -webkit-backdrop-filter: blur(12px) saturate(200%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.95) !important;
+  box-shadow: 0 15px 35px rgba(15, 23, 42, 0.08), inset 1.5px 1.5px 1px rgba(255, 255, 255, 1) !important;
+}
+
+[data-theme="light"] .header-capsule-container:hover {
+  border-color: rgba(234, 88, 12, 0.50) !important;
+}
+
+[data-theme="light"] .nav-island-item {
+  color: #475569;
+}
+
+[data-theme="light"] .nav-island-item:hover, [data-theme="light"] .nav-island-item.active {
+  color: #EA580C;
+  background: rgba(234, 88, 12, 0.16);
+  border-color: rgba(234, 88, 12, 0.45);
+}
+
+/* Custom Sleek Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.25);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(234, 88, 12, 0.5);
+}

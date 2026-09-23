@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#040711" />
+    <meta
+      name="description"
+      content="SupplyChainIQ — Autonomous Enterprise Supply Chain Delay &amp; Inventory Risk Forecaster implementing time-series regression and heuristic baseline comparison."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>SupplyChainIQ — Supply Chain Delay &amp; Inventory Risk Forecaster</title>
+    <script>
+      // Automatically purge rogue Service Workers & Caches on localhost
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.getRegistrations().then(function(registrations) {
+          for (var reg of registrations) {
+            reg.unregister();
+          }
+        });
+      }
+      if ('caches' in window) {
+        caches.keys().then(function(names) {
+          for (var name of names) caches.delete(name);
+        });
+      }
+      if (window.location.pathname === '/' || window.location.pathname === '/landing') {
+        window.location.replace('/landing.html');
+      }
+    </script>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <!-- Decoy container to safely trap buggy third-party Chrome extensions (e.g. Emily / GrowthSchool) hardcoded to hijack #root on localhost:3000 -->
+    <div id="root" style="display: none !important; visibility: hidden !important; width: 0 !important; height: 0 !important; position: fixed !important; left: -99999px !important; top: -99999px !important; overflow: hidden !important; pointer-events: none !important; opacity: 0 !important; z-index: -999999 !important;" aria-hidden="true"></div>
+    
+    <!-- True Application Container for SupplyChainIQ -->
+    <div id="supplychain-app"></div>
+  </body>
+</html>
