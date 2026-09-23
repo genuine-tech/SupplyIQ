@@ -1,3 +1,4 @@
+
 # SupplyChainIQ: Supply Chain Delay & Inventory Risk Forecaster
 
 > **Undergraduate AIML Mini-Project & Decision-Support System**  
