@@ -1,2 +1,4 @@
-export * from './ThemeContext.jsx';
-export { default } from './ThemeContext.jsx';
+import { ThemeProvider, useTheme } from './ThemeContext.jsx';
+
+export { ThemeProvider, useTheme };
+export default ThemeProvider;
