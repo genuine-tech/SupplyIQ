@@ -1,0 +1,8 @@
+backend/
+ml/
+notebooks/
+requirements.txt
+Procfile
+render.yaml
+unnecessary/
+start.bat
