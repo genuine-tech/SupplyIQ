@@ -1,9 +1,11 @@
 import React, { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Landing = () => {
+  const navigate = useNavigate();
   useEffect(() => {
-    window.location.replace('/landing.html');
-  }, []);
+    navigate('/dashboard', { replace: true });
+  }, [navigate]);
 
   return null;
 };
