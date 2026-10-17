@@ -5,6 +5,9 @@ const getBaseUrl = () => {
   if (typeof window !== 'undefined' && window.location.port === '8000') {
     return '/api';
   }
+  if (typeof window !== 'undefined' && window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1') {
+    return 'https://supplyiq-28k3.onrender.com/api';
+  }
   return 'http://localhost:8000/api';
 };
 
