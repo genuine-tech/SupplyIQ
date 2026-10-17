@@ -665,7 +665,7 @@
           <span class="theme__track"><span class="theme__knob"></span></span>
           <span class="theme__label theme__label--night">Night</span>
         </button>
-        <a class="btn btn--solid btn--sm header__cta" href="/dashboard" target="_top">Launch Control Center</a>
+        <a class="btn btn--solid btn--sm header__cta" href="/dashboard" target="_top">Open Control Center</a>
         <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="menu"><span></span><span></span><span class="menu-btn__label">Menu</span></button>
       </div>
     </header>
@@ -678,7 +678,7 @@
         <a href="#awakening">Decision Engine</a>
       </nav>
       <div class="menu__foot">
-        <a class="btn btn--solid" href="/dashboard" target="_top">Launch Control Center</a>
+        <a class="btn btn--solid" href="/dashboard" target="_top">Open Control Center</a>
         <p>Predictive inventory &amp; transit delay control center.<br>Continuous multi-horizon ML risk modeling.</p>
       </div>
     </div>
@@ -690,6 +690,17 @@
           <div class="hero__copy plate" data-hero="">
             <p class="hero__lede">SupplyChainIQ</p>
             <p class="hero__sub" style="margin-bottom: 0; max-width: 52ch;">A full-stack AIML decision-support system forecasting inventory demand across 15 SKUs using Gradient Boosting regression — achieving 95.5% R² accuracy on holdout test data with a 24% MAE improvement over heuristic baselines.</p>
+            <div style="margin-top: 1.25rem;">
+              <a
+                class="btn btn--solid header__cta"
+                href="/dashboard"
+                target="_top"
+                style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.65rem 1.4rem; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; font-size: 0.75rem; border-radius: 9999px; text-decoration: none;"
+              >
+                <span>Open Control Center</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -763,6 +774,17 @@
             <p class="body" style="max-width: 44ch; font-size: 12.5px; line-height: 1.62; text-align: left; margin: 0 0 0.75em; color: #ece6dad9;">High-throughput FastAPI microservice serves continuous multi-horizon forecasts (1/7/14/30-day) with sub-50ms latency. A deterministic policy layer converts demand distributions into automated replenishment orders and priority freight expedite protocols when coverage breaches critical thresholds.</p>
             <p class="body" style="max-width: 44ch; font-size: 12px; line-height: 1.58; text-align: left; margin: 0 0 0.9em; color: #ece6dabf;">Interactive control center delivers 6 operational surfaces: Fleet Overview KPIs, Multi-Horizon Demand Curves, Stockout Risk Matrix, Supplier Reliability Scorecards, Correlation Analytics, and Holdout Diagnostics.</p>
             <div style="font-size: 10px; line-height: 1.5; letter-spacing: 0.12em; text-transform: uppercase; opacity: 0.75; color: #ece6da; padding-top: 0.6em; border-top: 1px solid rgba(236, 230, 218, 0.15);">FastAPI · React + Recharts · 95.5% Test R² · 24% MAE Reduction · Zero Lookahead Leakage</div>
+            <div style="margin-top: 1rem;">
+              <a
+                class="btn btn--solid header__cta"
+                href="/dashboard"
+                target="_top"
+                style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.6rem 1.3rem; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; font-size: 0.72rem; border-radius: 9999px; text-decoration: none;"
+              >
+                <span>Open Control Center</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -1074,7 +1096,7 @@ try {
 } catch(err) {
   console.warn("Stills skipped:", err);
 }Me(.8,`Calibrating risk models`),await(document.fonts?.ready??Promise.resolve());let i=Te(n,{header:document.getElementById(`header`),hero:document.getElementById(`island`),faces:document.getElementById(`faces`),passage:document.getElementById(`passage`),awakening:document.getElementById(`awakening`),routePath:document.getElementById(`routePath`),vessel:document.getElementById(`vessel`),horizon:document.getElementById(`horizonNote`),awakeningCopy:document.getElementById(`awakeningCopy`)}),a=De(n);if(Le(i),Fe(),Ie(i),Re(),ze(),e.ticker.add(()=>n.update()),n.update(),Me(1,`Systems Online`),new URLSearchParams(location.search).has(`instant`)){document.getElementById(`loader`)?.remove(),document.body.classList.remove(`is-loading`),e.set([`.word`,`.header`,`[data-hero]`],{opacity:1,y:0}),i.refresh(),window.__kairo={xp:n,theme:a,scroll:i};return}n.islandGroup.scale.setScalar(.9),n.islandGroup.position.y=-.3,e.timeline({delay:.4}).to(`.loader__word span`,{y:-30,opacity:0,duration:.6,stagger:.04,ease:`power2.in`},0).to(`.loader__bar, .loader__label`,{opacity:0,duration:.4},0).to(`#loader`,{opacity:0,duration:1,ease:`power2.inOut`,onComplete:()=>{document.getElementById(`loader`)?.remove(),document.body.classList.remove(`is-loading`),i.refresh()}},.4).fromTo(`.word`,{y:70,opacity:0},{y:0,opacity:1,duration:1.8,ease:`power4.out`},.7).to(n.islandGroup.scale,{x:1,y:1,z:1,duration:2.4,ease:`power3.out`},.7).to(n.islandGroup.position,{y:0,duration:2.4,ease:`power3.out`,onUpdate(){n.rig.islandY=n.islandGroup.position.y}},.7).fromTo(`.header`,{opacity:0,y:-10},{opacity:1,y:0,duration:1.2,ease:`power2.out`},1.2).fromTo(`[data-hero]`,{opacity:0,y:24},{opacity:1,y:0,duration:1.2,stagger:.15,ease:`power3.out`},1.4),window.__kairo={xp:n,theme:a,scroll:i}}function Fe(){let e=matchMedia(`(hover: hover) and (pointer: fine)`).matches,t=matchMedia(`(prefers-reduced-motion: reduce)`).matches;document.querySelectorAll(`.btn`).forEach(n=>{n.querySelector(`.btn__arrow`)||(n.querySelector(`span:not(.btn__arrow)`)||(()=>{let e=document.createElement(`span`);for(e.className=`btn__label`;n.firstChild;)e.appendChild(n.firstChild);return n.appendChild(e),e})(),n.insertAdjacentHTML(`beforeend`,`<span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 16 16" width="14" height="14"><path d="M2 8h11M8.5 3.5 13 8l-4.5 4.5" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>`)),e&&!t&&n.addEventListener(`pointerenter`,e=>{let t=n.getBoundingClientRect();n.style.setProperty(`--x`,`${(e.clientX-t.left)/t.width*100}%`),n.style.setProperty(`--y`,`${(e.clientY-t.top)/t.height*100}%`)})})}function Ie(e){let t=document.getElementById(`footer`);if(!t)return;matchMedia(`(hover: hover) and (pointer: fine)`).matches&&(t.addEventListener(`pointermove`,e=>{let n=t.getBoundingClientRect();t.style.setProperty(`--mx`,`${e.clientX-n.left}px`),t.style.setProperty(`--my`,`${e.clientY-n.top}px`),t.classList.add(`is-lit`)}),t.addEventListener(`pointerleave`,()=>t.classList.remove(`is-lit`))),document.getElementById(`backToTop`)?.addEventListener(`click`,()=>e.scrollTo(document.getElementById(`island`),{duration:2.2}));let n=document.getElementById(`islandTime`),r=document.getElementById(`islandLight`),i=()=>{if(!n||!r)return;let e=new Date(Date.now()-36e6),t=e.getUTCHours(),i=e.getUTCMinutes();n.textContent=`${String(t).padStart(2,`0`)}:${String(i).padStart(2,`0`)}`,r.textContent=t<5?`Night on Kairo`:t<7?`First light on Kairo`:t<17?`Daylight on Kairo`:t<20?`Dusk on Kairo`:`Night on Kairo`};i(),setInterval(i,15e3)}function Le(e){let t=document.getElementById(`menuBtn`),n=document.getElementById(`menu`),r=r=>{n.hidden=!r,t.setAttribute(`aria-expanded`,String(r)),t.querySelector(`.menu-btn__label`).textContent=r?`Close`:`Menu`,document.body.classList.toggle(`menu-open`,r),r?e.lenis?.stop():e.lenis?.start(),r?n.querySelector(`a`)?.focus():t.focus()};t.addEventListener(`click`,()=>r(n.hidden)),document.addEventListener(`keydown`,e=>{e.key===`Escape`&&!n.hidden&&r(!1)}),document.addEventListener(`kairo:navigate`,()=>{n.hidden||r(!1)});let fm=document.getElementById(`footerMail`);if(fm){fm.href=`mailto:${Oe}`;fm.textContent=Oe;}
-let controlUrl = (window.location.port === '3000' || window.location.port === '8000') ? '/dashboard' : 'http://localhost:3000/dashboard';
+let controlUrl = '/dashboard';
 document.querySelectorAll('.header__cta, .menu__foot a').forEach(a => { a.href = controlUrl; a.target = '_top'; });}function Re(){let tEl=document.getElementById(`tabs`);if(!tEl)return;let t=[...tEl.querySelectorAll(`[role="tab"]`)],n=(n,r=!0)=>{for(let r of t){let t=r===n;r.setAttribute(`aria-selected`,String(t)),r.tabIndex=t?0:-1;let i=document.getElementById(r.getAttribute(`aria-controls`));i.hidden=!t,i.classList.toggle(`is-active`,t),t&&e.fromTo(i,{opacity:0,y:10},{opacity:1,y:0,duration:.5,ease:`power2.out`})}r&&n.focus()};t.forEach((e,r)=>{e.addEventListener(`click`,()=>n(e,!1)),e.addEventListener(`keydown`,e=>{let i={ArrowRight:r+1,ArrowDown:r+1,ArrowLeft:r-1,ArrowUp:r-1,Home:0,End:t.length-1};e.key in i&&(e.preventDefault(),n(t[(i[e.key]+t.length)%t.length]))})})}function ze(){let e=document.getElementById(`enquiryForm`),t=document.getElementById(`formHint`);if(!e)return;e.addEventListener(`submit`,n=>{n.preventDefault();let r=Object.fromEntries(new FormData(e).entries()),i=!0;for(let t of[`name`,`email`,`sailing`]){let n=e.elements[t].closest(`.field`),a=t===`email`?/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(r.email):String(r[t]||``).trim().length>0;n.classList.toggle(`is-invalid`,!a),i&&=a}if(!i){t.textContent=`Please add your name, a valid email and a sailing.`,t.classList.add(`is-error`);return}t.classList.remove(`is-error`);let a=[`Name: ${r.name}`,`Email: ${r.email}`,`Sailing: ${r.sailing}`,`Guests: ${r.guests}`,``,r.message?`Notes:\n${r.message}`:``].join(`
 `);t.textContent=`Opening your mail app with the enquiry addressed to the expedition office.`,window.location.href=`mailto:${Oe}?subject=${encodeURIComponent(ke)}&body=${encodeURIComponent(a)}`})}Pe().catch(e=>{
   console.warn("Loading notice:", e);

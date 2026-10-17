@@ -1961,7 +1961,7 @@
           class="btn btn--solid btn--sm header__cta"
           href="/dashboard"
           target="_top"
-          >Launch Control Center</a
+          >Open Control Center</a
         >
         <button
           class="menu-btn"
@@ -1984,7 +1984,7 @@
       </nav>
       <div class="menu__foot">
         <a class="btn btn--solid" href="/dashboard" target="_top"
-          >Launch Control Center</a
+          >Open Control Center</a
         >
         <p>
           Predictive inventory &amp; transit delay control center.<br />Continuous
@@ -2005,6 +2005,17 @@
               achieving 95.5% R² accuracy on holdout test data with a 24% MAE
               improvement over heuristic baselines.
             </p>
+            <div style="margin-top: 1.25rem;">
+              <a
+                class="btn btn--solid header__cta"
+                href="/dashboard"
+                target="_top"
+                style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.65rem 1.4rem; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; font-size: 0.75rem; border-radius: 9999px; text-decoration: none;"
+              >
+                <span>Open Control Center</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -2370,6 +2381,17 @@
             >
               FastAPI · React + Recharts · 95.5% Test R² · 24% MAE Reduction ·
               Zero Lookahead Leakage
+            </div>
+            <div style="margin-top: 1rem;">
+              <a
+                class="btn btn--solid header__cta"
+                href="/dashboard"
+                target="_top"
+                style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.6rem 1.3rem; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; font-size: 0.72rem; border-radius: 9999px; text-decoration: none;"
+              >
+                <span>Open Control Center</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
             </div>
           </div>
         </div>
@@ -6310,10 +6332,7 @@ diffuseColor.rgb *= mix(1.0, 0.7, vWet);`,
           fm.href = `mailto:${Oe}`;
           fm.textContent = Oe;
         }
-        let controlUrl =
-          window.location.port === "3000" || window.location.port === "8000"
-            ? "/dashboard"
-            : "http://localhost:3000/dashboard";
+        let controlUrl = "/dashboard";
         document
           .querySelectorAll(".header__cta, .menu__foot a")
           .forEach((a) => {

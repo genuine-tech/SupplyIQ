@@ -181,7 +181,7 @@ export const Layout = ({ children }) => {
 
                   {/* 3D Landing Showcase Link */}
                   <a
-                    href="/landing.html"
+                    href="/"
                     title="Return to 3D Landing Page"
                     className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-orange-500/15 hover:bg-orange-500/25 border border-orange-500/35 text-orange-600 dark:text-orange-400 text-xs font-mono font-bold backdrop-blur-md transition-all shadow-xs cursor-pointer"
                   >
